@@ -123,10 +123,7 @@ customers_1 = customer_df_cleaned.copy()
 customers_1[['Gender',
              'Ever_Married',
               'Graduated','Profession',
-              'Spending_Score']] = enc.fit_transform(customers_1[['Gender',
-                                                                 'Ever_Married',
-                                                                 'Graduated','Profession',
-                                                                 'Spending_Score']])
+              'Spending_Score']] = enc.fit_transform(customers_1[['Gender','Ever_Married','Graduated','Profession','Spending_Score']])
 
 customers_1.dtypes
 
